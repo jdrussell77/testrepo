@@ -139,8 +139,61 @@ public class colorlab
       pictObj.explore();
       */
      
-     
-     
+     /* colorify
+     int value, amount;
+       for(Pixel pixelObj : pixels)
+        {
+            value = pixelObj.getRed();
+            
+            value = (int) (value * 2);
+            
+            pixelObj.setRed(value);
+            
+            value = pixelObj.getBlue();
+            
+            value = (int) (value * 2);
+            
+            pixelObj.setBlue(value);
+            
+            value = pixelObj.getGreen();
+            
+            value = (int) (value * 2);
+            
+            pixelObj.setGreen(value);
+        }
+        pictObj.explore();
+     */
+    
+     /* swap2
+     int value, amount;
+       for(Pixel pixelObj : pixels)
+        {
+            value = pixelObj.getRed();
+            
+            pixelObj.setGreen(value);
+            
+        }
+        pictObj.explore();
+     */
+    int value1 = 0, value2 = 0, value3 = 0;
+       for(Pixel pixelObj : pixels)
+        {
+            value1 = pixelObj.getRed();
+            value2 = pixelObj.getGreen();
+            value3 = pixelObj.getBlue();
+            
+            Integer value4 = new Integer(value1);
+            Integer value5 = new Integer(value2);
+            Integer value6 = new Integer(value3);
+            
+            pixelObj.setRed(value5);
+            pixelObj.setBlue(value6);
+            pixelObj.setGreen(value4);
+        }
+        
+        pictObj.explore();
+    
+    
      
       
     }
