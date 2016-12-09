@@ -15,6 +15,11 @@ public class fileio
        
        int count_p = 0, count_u = 0, count_o = 0, count_words = 0, count_g = 0;
        
+       word = scanFile.next();
+       System.out.println(word);
+       word = scanFile.next();
+       System.out.println(word);
+       
        while(scanFile.hasNext())
        {
            word = scanFile.next();
